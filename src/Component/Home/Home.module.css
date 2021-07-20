@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Lexend Deca, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  z-index: 2;
+  height: 600px;
+  position: relative;
+  /* background-color: rgb(98, 137, 255); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgba(0, 0, 0, 0.25)
+    url("https://imagecdn.mightycause.com/606bebe9-776a-4561-8eef-095f58de3777/-/mirror/-/format/auto/-/progressive/yes/-/stretch/off/-/quality/smart/-/resize/1349x/");
+
+  background-position-y: -100px;
+  /* background-position: 50%; */
+}
+.header::before {
+  content: "";
+  /* background-color: rgb(98, 137, 255); */
+  /* background: rgba(0, 0, 0, 0.25); */
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: 1;
+  /* opacity: 0.81; */
+  background: rgba(39, 39, 51, 0.85);
+  background: linear-gradient(42deg, rgba(39, 39, 51, 0.85), rgba(39, 39, 51, 0));
+}
+.afterNav,
+.middle {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin-top: 50px;
+  color: #fff;
+  z-index: 2;
+}
+.afterNav > div,
+.middle > div {
+  width: 67%;
+}
+.afterNav h1 {
+  font-size: 3.625rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 0px;
+  letter-spacing: 3px;
+}
+.afterNav p {
+  letter-spacing: 1px;
+}
+.afterNav .getDemo {
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 25px;
+  /* font-weight: 600; */
+  width: 216px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  margin: 32px 0px;
+}
+.middle {
+  background-color: rgb(98, 137, 255);
+  width: 100%;
+  max-width: 100%;
+  padding-top: 50px;
+}
+.middle > div {
+  max-width: 1140px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.middle > div:nth-child(1) {
+  margin-top: 50px;
+}
+.middle > div:nth-child(1) > h2 {
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.middle > div:nth-child(1) > P {
+  letter-spacing: 1px;
+  text-align: center;
+}
+.middleImage {
+  margin-top: 75px !important;
+}
+.middleImage > img {
+  /* opacity: 0; */
+  animation: 0.7s ease-out 0s 1 normal forwards running lazy-load-anim1;
+}
+@media (max-width: 600px) {
+  .middle h2 {
+    font-size: 26px !important;
+  }
+  .middle p {
+    font-size: 16px;
+    letter-spacing: normal !important;
+    margin-top: 40px;
+  }
+  .middleImage {
+    width: 100% !important;
+  }
+  .middleImage img {
+    width: 100%;
+  }
+  .header {
+    background-position: 50%;
+  }
+  .afterNav > div,
+  .middle > div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .afterNav h1 {
+    font-size: 32px !important;
+  }
+}
+.productCart {
+}

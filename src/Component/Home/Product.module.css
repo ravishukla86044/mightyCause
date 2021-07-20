@@ -1,0 +1,77 @@
+.productContainer {
+  width: 100% !important;
+  box-sizing: border-box;
+  margin-top: 75px !important;
+}
+.heading {
+  margin-bottom: 3rem !important;
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
+.Con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100wh !important;
+}
+.Con > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 265px;
+  box-sizing: border-box;
+  height: 343px;
+  margin-top: 20px;
+}
+.Con > div svg {
+  width: 74px;
+  height: 58px;
+}
+.Con h3 {
+  font-size: 1.625rem;
+  min-height: 100px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+.Con p {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+.Con button {
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  line-height: 2.4rem;
+  border-width: 2px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: inherit;
+}
+@media (max-width: 600px) {
+  .productContainer h3 {
+    font-size: 21px;
+  }
+  .heading {
+    font-size: 28px !important;
+  }
+  .Con > div {
+    margin-top: 48px;
+    height: 344px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
