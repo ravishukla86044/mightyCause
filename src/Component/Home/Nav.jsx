@@ -110,7 +110,15 @@ function Nav() {
         </div>
         <ul className={styles.displayNone}>
           <li>
-            Products <span class="material-icons-round">expand_more</span>
+            <button>
+              Products <span class="material-icons-round">expand_more</span>
+              <ul className={styles.hidden}>
+                <li>Nonprofit Fundraising </li>
+                <li>Team and Event Fundraising</li>
+                <li>Giving Days</li>
+                <li>Pricing</li>
+              </ul>
+            </button>
           </li>
           <li>Resources</li>
           <li>About</li>
@@ -124,11 +132,13 @@ function Nav() {
             </div>
           </li>
           <li className={styles.searchLi}>
-            <span class="material-icons-round">search</span>
-            <input type="text" className={styles.input} />
+            <button>
+              <span class="material-icons-round">search</span>
+              <input type="text" className={styles.input} />
+            </button>
           </li>
           <li>
-            <span class="material-icons-round" style={{ fontSize: "20px" }}>
+            <span class="material-icons-round" style={{ fontSize: "26px" }}>
               account_circle
             </span>
           </li>

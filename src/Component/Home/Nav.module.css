@@ -6,12 +6,13 @@
   color: #fff;
   position: relative;
   z-index: 2;
-
+  /* position: fixed; */
+  top: 0px;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .Nav svg {
   fill: #fff;
@@ -30,6 +31,8 @@
   justify-content: center;
   margin: 0 28px;
   cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 7px;
 }
 .Nav li > span {
   font-size: 18px;
@@ -45,6 +48,44 @@
   margin: 0 21px;
   box-sizing: border-box;
 }
+.Nav .imgdiv li:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+.imgdiv button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.imgdiv button ul {
+  position: absolute;
+  top: 28px;
+  background: #fff;
+  display: none;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  color: rgb(111, 146, 255);
+}
+.imgdiv button:focus ul {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: left !important;
+}
+.imgdiv button:focus ul > li {
+  margin: 0px;
+  margin-top: 10px;
+  display: block;
+  height: 30px;
+  width: 100%;
+  text-align: left;
+}
+
 .Nav .logo {
   width: 167.19px;
   height: 31.09px;
@@ -65,13 +106,49 @@
   font-size: 16px;
   font-weight: 600;
   box-shadow: 0 0 0 0 rgb(0 0 0 / 20%), 0 0 0 0 rgb(0 0 0 / 14%), 0 0 0 0 rgb(0 0 0 / 12%);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .Nav .laptopdiv p {
   margin: 0px;
 }
+.Nav .laptopdiv:hover {
+  color: #808491 !important;
+  background-color: #fff;
+}
 .Nav .laptopdiv span {
   font-size: 20px;
+}
+.Nav .searchLi span:hover {
+  color: rgb(98, 137, 255);
+  background-color: rgb(225, 225, 225);
+  box-shadow: rgb(97, 136, 225/10%) 0 0 0 6px;
+  border-radius: 50%;
+}
+.searchLi {
+  font-size: 11px;
+}
+.searchLi span {
+  font-size: 27px !important;
+  padding: 5px;
+}
+.searchLi button:focus-within input {
+  visibility: visible !important;
+  width: 150px !important;
+  color: #fff;
+}
+/* .searchLi button:focus input:focus-within {
+  visibility: visible !important;
+  width: 150px !important;
+} */
+.searchLi button {
+  background: transparent;
+  color: inherit;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .input {
   background: none;
@@ -81,6 +158,8 @@
   height: 40px;
   color: #494d59;
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid #fff;
+  outline: none;
 }
 .inputVisible {
   border-style: none none solid;
@@ -88,12 +167,7 @@
   visibility: visible;
   padding-left: 40px;
 }
-.searchLi {
-  font-size: 11px;
-}
-.searchLi span {
-  font-size: 20px !important;
-}
+
 @media (max-width: 600px) {
 }
 .smallNav {

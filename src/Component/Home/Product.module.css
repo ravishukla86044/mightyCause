@@ -59,6 +59,15 @@
   font-size: 1rem;
   font-weight: 500;
   color: inherit;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Con button:hover {
+  color: #808491 !important;
+  background-color: #fff;
+}
+.Con > div:hover {
+  box-shadow: 0px 10px 30px 0px rgb(97 136 255 / 20%) !important;
 }
 @media (max-width: 600px) {
   .productContainer h3 {
