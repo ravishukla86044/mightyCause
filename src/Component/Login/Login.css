@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  box-shadow: 2px 2px 2px 2px rgb(228, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 15px; */
+  position: fixed;
+  background-color: white;
+  z-index: 5;
+  top: 0;
+  width: 100vw;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+.logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 8px;
+}
+.logo > img {
+  width: 50px;
+}
+.logo > h3 {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  color: rgb(97, 136, 253);
+}
+.right-link {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+}
+
+.left-link > button,
+.right-link > button {
+  margin-top: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

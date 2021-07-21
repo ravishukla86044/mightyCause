@@ -1,0 +1,74 @@
+.form {
+  margin-top: 100px;
+}
+.btn {
+  width: 450px;
+  height: 43px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 650;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.heading {
+  margin-bottom: 50px;
+}
+.google {
+  background-color: rgb(97, 136, 253);
+  border: 2px solid rgb(97, 136, 253);
+}
+.fb {
+  background-color: rgb(6, 62, 126);
+  border: 2px solid rgb(6, 62, 126);
+}
+span {
+  margin: 15px;
+}
+.google:hover {
+  background-color: rgb(6, 62, 126);
+  border: 2px solid rgb(6, 62, 126);
+}
+.fb:hover {
+  background-color: rgb(1, 16, 32);
+  border: 2px solid rgb(1, 16, 32);
+}
+.befaft {
+  margin: auto;
+  width: 650px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+hr {
+  width: 300px;
+  height: 0.1px;
+  background-color: rgb(199, 195, 195);
+  margin-top: 10px;
+}
+.myform {
+  margin-top: 50px;
+}
+input {
+  outline: 0;
+  padding-left: 30px;
+  border-width: 0 0 3px;
+  border-color: gray;
+  width: 650px;
+  font-size: 18px;
+  font-weight: 500;
+}
+input:focus {
+  border-color: rgb(97, 136, 253);
+}
+input[type='submit'] {
+  width: 250px;
+  margin-top: 30px;
+  height: 40px;
+  color: white;
+  font-weight: 450;
+  border: 2px solid rgb(97, 136, 253);
+  padding: 0;
+  background-color: rgb(97, 136, 253);
+  border-radius: 5px;
+  cursor: pointer;
+}

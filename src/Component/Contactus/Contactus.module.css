@@ -1,0 +1,176 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    overflow-x: hidden !important;
+}
+.top-main-div
+{
+    background-image:url("https://imagecdn.mightycause.com/603e62c7-2568-4eb8-a603-8a1b4a613078/");
+    
+    background-repeat:no-repeat;
+    background-size: cover;
+      
+}
+.top-heading > p:nth-child(1)
+{
+    padding-top:12%;
+    font-size: 3.325rem;
+    font-weight:300;
+    font-family: Lexend Deca,sans-serif;
+    color: rgb(73, 77, 89);
+}
+.top-heading>p:nth-child(2)
+{
+    padding-top: 2%;
+    font-size: 1rem;
+    font-weight:300;
+    font-family: Lexend Deca,
+    sans-serif;
+    color: rgb(73, 77, 89);
+}
+.middle-main-div
+{
+    background-color: rgb(97, 136, 255);
+    
+    height: 500px;
+}
+.information-card
+{
+    display:flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+
+    margin-top:2%;
+    padding-bottom: 3%;
+    
+}
+.middle-main-div
+{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+.middle-main-div > div
+{
+    width: 50%;
+    height: 100%;
+}
+.middle-main-div>div:nth-child(2)
+{
+    background-image: url("https://imagecdn.mightycause.com/157f44ef-a012-4866-b92a-f304aed7ac8d/");
+    
+    background-size: 100% 100%;
+    height: 100%;
+    opacity: 60%;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+}
+
+.middle-main-div>div:nth-child(3)
+{
+      position: absolute;
+      display: block;
+      width: 60%;
+      
+      top: 10%;
+      left: 25%;
+      right: 0;
+      bottom: 0;
+      
+      z-index: 2;
+      cursor: pointer;
+
+}
+
+.middle-main-div>div:nth-child(4) {
+    position: absolute;
+    display: block;
+    width: 60%;
+    
+    top: 56%;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 2;
+    cursor: pointer;
+    
+
+}
+
+/*********** card 1  ************/
+.card
+{
+    width:22%;
+    margin-left:1%;
+    margin-right:1%;
+    padding: 1%;
+    background-color:white;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 3%);
+    color: rgb(73, 77, 89);
+
+}
+.card-title
+{
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4%;
+}
+.card-description
+{
+    
+    font-size: 0.9125rem;
+    line-height: 1.6;
+}
+
+/********** car5d functional*****/
+.card-functional
+{
+    width:70%;
+    
+    text-align:center;
+    padding: 2%;
+    background-color: white;
+    padding: 4%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-functional > h1
+{
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 1.3;
+        color: rgb(73, 77, 89);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.card-functional>p
+{
+    margin-top: 1%;
+        font-family: Lexend Deca,
+        sans-serif;
+            color: #494d59;
+        font-size: 0.7rem;
+        font-weight: 400;
+        line-height: 1.8;
+}
+.card-functional>button
+{
+    margin-top: 2%;
+    width: 30%;
+    height: 20%;
+    font-family: Lexend Deca,
+    sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(39, 160, 160);
+    border: none;
+    background-color:transparent;
+}

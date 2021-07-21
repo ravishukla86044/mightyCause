@@ -1,6 +1,7 @@
 import { Nav } from "./Nav";
 import styles from "./Home.module.css";
 import { Product } from "./Product";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -546,6 +547,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
