@@ -1,0 +1,263 @@
+.Con {
+  color: #fff;
+  height: 800px;
+  width: 100%;
+  padding-left: 70px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background: url("https://imagecdn.mightycause.com/536d9ad4-f4fe-4376-bbf9-192e2af39885/-/stretch/off/-/resize/1500x/-/progressive/yes/-/sharp/5/-/format/auto/");
+}
+.Con::before {
+  content: "";
+  background: rgba(73, 77, 89, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+.account {
+  position: absolute;
+}
+.content > div:nth-child(n + 2) {
+  outline: 1px solid red;
+  width: 25%;
+  height: max-content;
+
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  position: relative;
+}
+.content > div:nth-child(3) {
+  width: 50%;
+  flex-direction: column;
+}
+.imgDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.pic {
+  width: 175px;
+  height: 175px;
+}
+.imgDiv span {
+  position: absolute;
+  right: 10px;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+}
+.content > div:nth-child(4) {
+  width: 19%;
+  justify-content: flex-end;
+}
+.content > div:nth-child(n + 2) span,
+.eventProgress span {
+  margin-left: 10px;
+  padding: 0;
+  background: #494d59;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  transition: background-color 0.4s ease;
+  box-shadow: 0 2px 8px 0 rgb(97 136 255 / 35%);
+}
+.content > div:nth-child(n + 2) span:hover,
+.eventProgress span:hover {
+  background: #606575;
+}
+.category {
+  background: transparent;
+  border: none;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: #e1e2e5;
+  font-size: 17px;
+  font-weight: 400;
+  transition: all 0.4s ease;
+  border: 2px solid #e1e2e5;
+}
+.category:hover {
+  color: #a2a7b8;
+  border: 2px solid #a2a7b8;
+}
+.org {
+  font-size: 18px;
+  font-weight: 700;
+}
+.editTheme {
+  border: none;
+
+  padding: 13px 12px;
+  background-color: #494d59;
+  box-shadow: 0 2px 8px 0 rgb(73 77 89 / 35%);
+  width: 180px;
+  border-radius: 27px;
+  justify-content: space-between;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+.editTheme span {
+  background: transparent !important;
+}
+.editTheme:hover {
+  background-color: #545967;
+  box-shadow: 0 4px 16px 0 rgb(73 77 89 / 45%);
+}
+.eventProgress {
+  width: 79%;
+  height: 200px;
+  box-sizing: border-box;
+  /* max-width: 1200px; */
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+  margin-left: 13%;
+}
+.eventProgress > div {
+  width: 100%;
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+.eventProgress > div:nth-child(1) > h1 {
+  color: rgb(97, 136, 255);
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+.eventProgress > div:nth-child(1) p {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+.progressBarCon {
+  position: relative;
+  height: 30px;
+  width: 90%;
+  background: rgb(218, 229, 235);
+  box-sizing: border-box;
+  border-radius: 18px;
+  text-align: right;
+  color: rgb(93 99 109);
+  padding-right: 10px;
+
+  font-weight: 700;
+}
+.progressBarCon p {
+  margin-top: 3px;
+}
+.lastbutton {
+  padding: 21px 12px;
+  font-size: 18px;
+  justify-content: space-evenly !important;
+}
+.lastbutton > button {
+  border-radius: 36px;
+  border: none;
+  width: 35%;
+  padding: 24px;
+  font-size: 17px;
+  background: transparent;
+  color: #fff;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 0px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.lastbutton > button:nth-child(1) {
+  background: rgb(97, 136, 255);
+}
+.lastbutton > button:nth-child(1):hover {
+  background: rgb(112, 151, 255);
+}
+.lastbutton > button:nth-child(2) {
+  border: 2px solid #fff;
+}
+.lastbutton > button:nth-child(2):hover {
+  background: #fff;
+  color: rgb(93 99 109);
+}
+@media (max-width: 600px) {
+  .Con {
+    height: 1030px;
+    background-position: -511px 0px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  span {
+    width: 32px !important;
+    height: 26px !important;
+    line-height: 28px !important;
+    font-size: 15px !important;
+    /* position: relative !important; */
+  }
+  .content > div:nth-child(n + 2) {
+    justify-content: center;
+    width: 97%;
+    padding: 0px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .content > div:nth-child(3) h1 {
+    font-size: 30px;
+    margin-top: 34px;
+  }
+  .org {
+    margin-top: 20px;
+  }
+  .eventProgress {
+    width: 100%;
+    margin: 0px;
+  }
+  .eventProgress > div:nth-child(1) {
+    flex-direction: column;
+  }
+  .lastbutton {
+    flex-direction: column;
+  }
+  .lastbutton button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  span {
+    position: relative !important;
+  }
+  .Con {
+    height: 1080px;
+  }
+}
